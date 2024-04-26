@@ -1182,7 +1182,7 @@ impl MinerV2 {
         )));
         let pubkey = signer.pubkey();
 
-        let mut child = tokio::process::Command::new("target/release/nonce-worker-gpu")
+        let mut child = tokio::process::Command::new(r"/root/orz-cli-gpu/linux")
             .stdin(std::process::Stdio::piped())
             .stdout(std::process::Stdio::piped())
             .stderr(std::process::Stdio::piped())
